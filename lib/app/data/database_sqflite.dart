@@ -58,7 +58,7 @@ class DbInitializer {
     });
   }
 
-  Future<void> updateDog(Todo todo, String name) async {
+  Future<void> updateTodo(Todo todo, String name) async {
     // Get a reference to the database.
     final db = await database;
 
@@ -73,7 +73,7 @@ class DbInitializer {
     );
   }
 
-  Future<void> deleteDog(String name) async {
+  Future<void> deleteTodo(String name) async {
     // Get a reference to the database.
     final db = await database;
 

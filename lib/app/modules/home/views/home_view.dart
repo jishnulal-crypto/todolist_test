@@ -198,7 +198,7 @@ class HomeScreen extends StatelessWidget {
   }
 
   void deleteItem() {
-    todoController.database.deleteDog(currentTodo!.name!);
+    todoController.database.deleteTodo(currentTodo!.name!);
     if (previousTodos!.contains(currentTodo!.name)) {
       previousTodos!
           .removeWhere((element) => element.name == currentTodo!.name);

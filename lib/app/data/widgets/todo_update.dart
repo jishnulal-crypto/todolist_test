@@ -73,7 +73,7 @@ class TodoUpdate extends StatelessWidget {
             } else {
               var todo = Todo(
                   done: 1, name: label.text, description: description.text);
-              todoController.dbInitializer.updateDog(todo, updateKey!);
+              todoController.dbInitializer.updateTodo(todo, updateKey!);
               homeController.fetchTodos();
             }
 
